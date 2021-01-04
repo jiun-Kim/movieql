@@ -1,0 +1,14 @@
+type Movie {
+  id: Int!
+  title: String!
+  vote_average: Int!
+  overview: String
+  original_language: String
+  poster_path: String
+  genres: [String]
+}
+
+type Query {
+  movies: [Movie]!
+  movie(id: Int!): Movie
+}
